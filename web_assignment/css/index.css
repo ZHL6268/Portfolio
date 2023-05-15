@@ -1,0 +1,151 @@
+/*there are some rules for all of the pages to settle all of the pages in same styles*/
+
+/*there is no padding and margin for all elements; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*make the length/size easier to adjust, avoid overflow */
+    font-family: 'Inconsolata', monospace; /* all texts in all pages should have the same font-family*/
+}
+a{
+    text-decoration: none; /*all links has no decoration(underline), even after visited */
+}
+a:after{
+    text-decoration: none;
+}
+/*the general display is flex-colomn, which means contents dispaly one under another, and horizentally in center*/
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    font-size: 100px;
+}
+h3{
+    padding-top: 4px;
+    font-weight: 400;
+}
+/*nav bar position is absolute and should be all the same in all pages*/
+.nav{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    padding-right: 20px;
+}
+.nav a{
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    color: #fff;
+}
+.nav a:hover{
+    font-weight: bolder; /*the font weight bolder when hover over*/
+}
+
+.main{
+    /*make the bg img size fit the screen size*/
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/mainbg.png) center;
+    /*bg img cover the container*/
+    background-size: cover;
+    /*all content in main should in the middle*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+
+/*every page has title, title bg img, and nav; set the style of them here: */
+.title{  
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    color: #fff;
+}
+/*set the nav to front*/
+.nav{
+    z-index: 9999;
+}
+
+
+
+
+
+/* Night Mode Button Styles */
+.night-mode-button{
+    margin-top: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.label {
+    background-color: black;
+    display: flex;
+    height: 30px;
+    border-radius: 50px;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.label .fa-moon {
+    color: rgb(250, 250, 250);
+}
+
+label .fa-sun {
+    color: rgb(243, 188, 36);
+}
+
+.blob {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    background: rgb(169, 241, 243);
+    border-radius: 50px;
+    transition: .5s ease all;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+/* Night Mode Info Styles */
+.info {
+    display: block;
+    margin-top: 50px;
+}
+
+.info.night {
+    color: white;
+}
+
+/* Grayscale Filter */
+.grayscale-filter {
+    filter: grayscale(100%);
+}
+
+/* Night Mode Styles */
+body.night-mode {
+    background-color: black;
+    color: #eee;
+}
+
+body.night-mode .title {
+    background: black;
+}

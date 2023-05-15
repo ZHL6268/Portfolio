@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zhihan Li's Project</title>
+    <!--the general design/style for all pages-->
+	<link rel="stylesheet" href="../css/index.css">
+    <!--the design/style for project page only-->
+    <link rel="stylesheet" href="../css/project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+</head>
+<body id="project_body">
+    <!--nav part that every page have the same one-->
+    <div class="nav">
+        <a href="../index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+        <a href="courseShare.html">CourseShare</a>
+    </div> 
+    <!--the Title part show where the visiter is, which is Project page-->
+    <div class="title">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="night-mode-button">
+        <input type="checkbox" class="checkbox" id="night-mode">
+        <label for="night-mode" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <i class="blob"></i>
+        </label>
+    </div>
+    
+    <!--main content of this page is a image gallery, 
+        each image card has a button,which will lead to a function-->
+    <div class="gallery" id="gallery">
+        <img src="../img/p1Image.png" alt="image of p1" id="p1Image" class="project_image">
+        <div class="gallery_content">
+            <img src="../img/image1.png" alt="project1 background" width="600" height="400">
+            <p>PORTFOLIO WEB</p>
+            <h3 class="grid_title">HTML | CSS | JS</h3>
+            <!--put parameter into onclick event, 
+                so that different view button will show different content-->
+            <button id="p1Button" class="viewbutton" onclick="myFunction('p1_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image2.png" alt="project2 background" width="600" height="400">
+            <p>BLOG WEB</p>
+            <h3 class="grid_title">REACT</h3>
+            <button class="viewbutton" onclick="myFunction('p2_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image3.png" alt="project3 background" width="600" height="400">
+            <p>COOL CARD PLAY</p>
+            <h3 class="grid_title">HTML | CSS</h3>
+            <button class="viewbutton" onclick="myFunction('p3_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image4.png" alt="project4 background" width="600" height="400">
+            <p>FLEX DISPLAY PRACTICE</p>
+            <h3 class="grid_title">HTML | CSS</h3>
+            <button class="viewbutton" onclick="myFunction('p4_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image5.png" alt="project5 background" width="600" height="400">
+            <p>TRANSACTION PRACTICE</p>
+            <h3 class="grid_title">HTML | CSS</h3>
+            <button class="viewbutton" onclick="myFunction('p5_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image6.png" alt="project6 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p6_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image7.png" alt="project7 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p7_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image8.png" alt="project8 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p8_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image9.png" alt="project9 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p9_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image10.png" alt="project10 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p10_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image11.png" alt="project11 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p11_content')">view more</button>
+        </div>
+        <div class="gallery_content">
+            <img src="../img/image12.png" alt="project12 background" width="600" height="400">
+            <p>WEBSITES</p>
+            <h3 class="grid_title">font_end</h3>
+            <button class="viewbutton" onclick="myFunction('p12_content')">view more</button>
+        </div>
+    </div>
+    <!--the following contents are written for helping JS function work, 
+        those are details of the projects images representated-->
+    <div id="p1_content" class="project_details">
+        <img src="../img/p1_1.png" alt="image of project 1">
+        <img src="../img/p1_2.png" alt="image of project 1">
+        <img src="../img/p1_3.png" alt="image of project 1">
+        <img src="../img/p1_4.png" alt="image of project 1">
+        <img src="../img/p1_5.png" alt="image of project 1">
+        <img src="../img/p1_6.png" alt="image of project 1">
+        <img src="../img/p1_7.png" alt="image of project 1">
+        <img src="../img/p1_8.png" alt="image of project 1">
+        <img src="../img/p1_9.png" alt="image of project 1">
+        <button class="cancel_button" onclick="cancelFunction('p1_content')">×</button>
+    </div>
+    <div id="p2_content" class="project_details">
+        <img src="../img/p2_1.png" alt="image of project 2">
+        <img src="../img/p2_2.png" alt="image of project 2">
+        <img src="../img/p2_3.png" alt="image of project 2">
+        <img src="../img/p2_4.png" alt="image of project 2">
+        <img src="../img/p2_5.png" alt="image of project 2">
+        <img src="../img/p2_6.png" alt="image of project 2">
+        <button class="cancel_button" onclick="cancelFunction('p2_content')">×</button>
+    </div>
+    <div id="p3_content" class="project_details">
+        <img src="../img/p3_1.png" alt="image of project 3">
+        <img src="../img/p3_2.png" alt="image of project 3">
+        <button class="cancel_button" onclick="cancelFunction('p3_content')">×</button>
+    </div>
+    <div id="p4_content" class="project_details">
+        <img src="../img/p4_1.png" alt="image of project 4">
+        <button class="cancel_button" onclick="cancelFunction('p4_content')">×</button>
+    </div>
+    <div id="p5_content" class="project_details">
+        <img src="../img/p5_1.png" alt="image of project 5">
+        <button class="cancel_button" onclick="cancelFunction('p5_content')">×</button>
+    </div>
+    <div id="p6_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p6_content')">×</button>
+    </div>
+    <div id="p7_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p7_content')">×</button>
+    </div>
+    <div id="p8_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p8_content')">×</button>
+    </div>
+    <div id="p9_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p9_content')">×</button>
+    </div>
+    <div id="p10_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p10_content')">×</button>
+    </div>
+    <div id="p11_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p11_content')">×</button>
+    </div>
+    <div id="p12_content" class="project_details">
+        <p>Nothing here</p>
+        <button class="cancel_button" onclick="cancelFunction('p12_content')">×</button>
+    </div>
+    <!--attach index js here-->
+    <script src="../index.js"></script>
+</body>
+</html>

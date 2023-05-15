@@ -1,0 +1,101 @@
+/* Sets the border, padding, and margin for the blog element */
+.blog {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styles the h2 element inside the blog element */
+.blog h2 {
+  /* Makes the h2 element a flex container with centered and spaced-between alignment */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Changes the cursor to a pointer when hovering over the h2 element */
+  cursor: pointer;
+}
+
+/* Styles the p element inside the blog element */
+.blog p {
+  /* Hides the p element by default */
+  display: none;
+}
+
+/* Styles the p element inside the collapsed blog element */
+.blog.collapsed p {
+  /* Hides the p element inside a collapsed blog */
+  display: none;
+}
+
+/* Styles the ::after pseudo-element of the h2 element inside the blog element */
+.blog h2::after {
+  /* Adds a downward pointing triangle to the end of the h2 element */
+  content: "▼";
+  /* Adds a smooth 0.3s transition for the transform property */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Styles the ::after pseudo-element of the h2 element inside the collapsed blog element */
+.blog.collapsed h2::after {
+  /* Rotates the triangle in the opposite direction to indicate that the blog is collapsed */
+  transform: rotate(-90deg);
+}
+
+/* Styles the date element inside the blog element */
+.blog .date {
+  /* Sets the color for the date element */
+  color: #888;
+  /* Sets the font size for the date element */
+  font-size: 14px;
+  /* Adds a margin to the bottom of the date element */
+  margin-bottom: 5px;
+}
+
+/* Styles the blog element */
+.blog{
+  /* Sets the width to 100% */
+  width: 100%;
+  /* Sets the background to none */
+  background: none;
+  /* Removes the border */
+  border: none;
+  /* Adds a box shadow to the blog element */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Styles the blogContainer element */
+#blogContainer {
+  /* Makes the container a flex container with column direction */
+  display: flex;
+  flex-direction: column;
+  /* Sets the maximum height for the container */
+  max-height: 400px; 
+  /* Adds a vertical scroll bar when the container overflows */
+  overflow-y: auto; 
+  /* Sets the width to 50% */
+  width: 50%;
+  /* Adds a margin to the top of the container */
+  margin-top: 20px;
+  /* Centers the container */
+  justify-content: center;
+}
+
+/* Styles the blogList element */
+#blogList{
+  /* Makes the list a flex container with column direction */
+  display: flex;
+  flex-direction: column;
+  /* Centers the items in the list */
+  justify-content: center;
+}
+
+/* Styles the button element */
+.btn{
+  /* Sets the background to none */
+  background: none;
+  /* Adds a box shadow to the button */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  color: aliceblue;
+  cursor: pointer;
+}

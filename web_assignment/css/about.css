@@ -1,0 +1,143 @@
+
+/*there are three parts in ABOUT ME page: About; Education; */
+
+.title{
+    /*set bg img and how it shown in the container*/
+    background: url(../img/aboutbg.png) no-repeat;
+    /*https://www.pexels.com/photo/clouds-landscape-photography-531972/*/
+    background-size: cover;
+}
+
+/*about part has two containers, text  and  image. */
+.about_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /*there are two containers in this part, displayed flex, same line, one after another*/
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+/*the image placed in left-side*/
+.img_container{
+    width: 35%;
+    height: 65%;
+    min-height: 260px;
+    margin-top: 50px;
+    background-image: url(../img/me.png);
+    background-size: cover;
+}
+/*the text , and include heading, paragraph, a button and 3 links*/
+.text{
+    text-align: left; 
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.text span{
+    font-weight: bolder; /*some important info in the paragraph has been bolded*/
+}
+.text h2{
+    margin-bottom: 10px;
+    margin-top: 7%; /*set some gaps among diff parts by addding margins*/
+}
+.text p{
+    color: gray;
+    margin-bottom: 7%;
+}
+.resume{
+    margin-top: 7%;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*a button has board, gray color, transparent design */
+.btn{
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    background:none;
+    border: solid gray;
+    border-radius: 30px;
+    opacity: 0.7;
+    color: gray;
+    text-align: center;
+}
+/*its design changed when hover over*/
+.btn:hover{
+    background-color: gray;
+    color: #fff;
+}
+/*there is a container of 3 links*/
+/*3 links are displayed in one line */
+.link_online{
+    display: flex;
+    justify-content: space-around; /*displayed evenly*/
+    font-size: larger;
+    margin-bottom: 6%;
+}
+/*set the style of links, display the icons in middle of link*/
+.link_online a{
+    color: #fff;
+    background-color: gray;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link_online a:hover{
+    font-weight: bolder;
+    border: solid black;
+}
+
+
+/*education part includes a heading, a p, and a image map, displayed them all vertically center*/
+.education_part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    width: 100vw;
+    height: 100vh;
+}
+.map_container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+/*more part has three unordered lists; each os them has a heading and a list; displed grid in colomns; */
+.More_part{
+    margin-top: 10%;
+}
+.More_part h2{
+    text-align: center;
+}
+.more_main{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 700px;
+}
+.sub_more{
+    overflow: scroll;
+}
+.sub_more ul{
+    color: gray;
+    margin-top: 5%;
+}
+.sub_more li{
+    margin-top: 3%;
+}
+
+
+
+
+

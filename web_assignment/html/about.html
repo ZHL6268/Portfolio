@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zhihan Li's Project</title>
+    <!--the general design/style for all pages-->
+	<link rel="stylesheet" href="../css/index.css">
+     <!--the design/style for about page only-->
+    <link rel="stylesheet" href="../css/about.css">
+    <!--the design/style for different size of device-->
+    <link rel="stylesheet" href="../css/media.css">
+    <!--the lib of media icons/logos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+</head>
+<body>
+    <!--nav part that every page have the same one-->
+    <div class="nav">
+        <a href="../index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+        <a href="courseShare.html">CourseShare</a>
+    </div> 
+    <!--the Title part show where the visiter is, which is about me page-->
+    <div class="title">
+        <h1>About Me</h1>
+    </div>
+    
+    <div class="night-mode-button">
+        <input type="checkbox" class="checkbox" id="night-mode">
+        <label for="night-mode" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <i class="blob"></i>
+        </label>
+    </div>
+    
+    <!--about part contains a imgcontainer and a text div-->
+    <div class="about_part">
+        <div class="img_container"></div>
+        <div class="text">
+            <h2>ABOUT</h2>
+            <p>Hi, I am Zhihan  Li,
+            a first year postgraduate student marjoring in Master of computing in <span>ANU</span>.
+            Looking for an internship as a <span>Web Developer or Front end Developer</span>.</p>
+            <hr>
+            <h2>CONTACT ME</h2>
+            <div class="links">
+                <div class="link_online">
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/intent/tweet?text=file%3A///Users/sarah/Desktop/23s1/web/assignment/index.html" class="fa fa-twitter"></a>
+                    <a href="https://www.linkedin.com/in/zhihanli6268/" class="fa fa-linkedin"></a>
+                </div>
+                <p>Tel: 0478-589-777 <br>Email: sarah.zhihanli@gmail.com</p>
+            </div>
+            <hr>
+            <div class="resume">
+            <a class= "btn" target="_blank" href="../img/ZhihanLi'sResume.pdf" download="Zhihan Li's resume.pdf">Download resume</a>
+            <script src="https://platform.linkedin.com/in.js">lang: en_US</script>
+            <script type="IN/Share" data-url="https://64619b80f630b3747ec387c0--precious-lebkuchen-b7ebe4.netlify.app/"></script>
+            </div>
+        </div>
+    </div>
+    <!--education part contains a image map-->
+    <div class="education_part">
+        <h2>EDUCATION</h2>
+        <p>(try click CHINA | USA | AUSTRALIA area)</p>
+        <div class="map_container">
+            <img src="../img/worldmap.png" alt="a image of world map with country name" usemap="#worldmap" id="world_map" width="1300">
+            <map name="worldmap">
+                <area target="_blank" alt="HQU" title="HQU" href="https://en.wikipedia.org/wiki/Huaqiao_University" coords="826,286,864,255,916,279,951,222,990,247,964,286,980,321,946,349,902,329,852,320"  shape="poly" id="HQU">
+                <area target="_blank" alt="GMU" title="GMU" href="https://en.wikipedia.org/wiki/George_Mason_University" coords="289,243,401,263,401,277,441,262,392,328,336,325,288,305,279,281" shape="poly" id="GMU">
+                <area target="_blank" alt="ANU" title="ANU" href="https://en.wikipedia.org/wiki/Australian_National_University" coords="1012,497,54" shape="circle" id="ANU">
+            </map>
+        </div>
+    </div>
+    <!--more part contains three divs, each of them has a heading and a unordered list-->
+    <div class="More_part">
+        <h2>WHAT'S MORE</h2>
+        <div class="more_main">
+            <div class="sub_more">
+                <h3>CERTIFICATION</h3>
+                <ul>
+                    <li>Coursera: Introduction of CSS3 certification from Michigan and Coursera</li>
+                    <li>Coursera: Introduction of HTML5 certification from Michigan and Coursera</li>
+                    <li>Coursera: Introduction of JavaScript certification from Michigan and Coursera</li>
+                    <li>Udemy: certification of JavaScript Essential</li>
+                </ul>
+            </div>
+            <div class="sub_more">
+                <h3>EXPERIENCE</h3>
+                <ul>
+                    <li>BDO China Shu Lun Pan Certified Public Accountants LLP</li>
+                </ul>
+            </div>
+            <div class="sub_more">
+                <h3>SKILLS</h3>
+                <ul>
+                    <li>Software capability : Proficient in Microsoft Office Suite (Word, Excel, PowerPoint), Access.</li>
+                    <li>Computer Language: JAVA, HTML, CSS, JavaScript, SQL, Python, JavaFX, Git, React.</li>
+                    <li>Professional ability : Attention to detail, Team collaboration, Quick Learner, Problem solving.</li>
+                    <li>linguistic competence : Chinese (native) and English (fluent).</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="../index.js"></script>
+    
+</body>
+</html>

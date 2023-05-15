@@ -1,0 +1,64 @@
+/*the purpose of theis css is to
+set the image map size on different fixed size based on diff window/media size*/
+
+
+/*for the device's size bigger than 1000*/
+@media only screen and (max-width: 1300px) and (min-width: 1000px){
+    .map_container img{
+        width: 1000px;
+    }
+    .education_part{
+        height: 600px;
+    }
+    .More_part{
+        height: 600px;
+    }
+}
+
+/*for the device's size between 800-1000*/
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    /*change the way about_part display. for phones, the colomn display will be better*/
+    .about_part{
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+    .about_part{
+        height: 800px;
+    }
+    .education_part{
+        height: 600px;
+    }
+    .More_part{
+        height: 600px;
+    }
+    /*change the image container size*/
+    .img_container{
+        width: 50%;
+        height: 400px;
+    }
+    .map_container img{
+        width: 800px;
+    }
+}
+/*for the device's size between 500-800*/
+@media only screen and (max-width: 800px) and (min-width: 500px) {
+    /*change the image container size*/
+    .map_container img{
+        width: 500px;
+    }
+}
+/*for the device's size smaller than 500*/
+@media only screen and (max-width: 500px) {
+    /*change the image container size*/
+    .map_container img{
+        width: 390px;
+    }
+
+}

@@ -1,0 +1,100 @@
+
+.title{
+    background: url(../img/contactbg.png) no-repeat;
+    /*https://www.pexels.com/photo/photography-of-clouds-during-dusk-814449/*/
+    background-size: cover;
+}
+/*display all of contents in contact in center  */
+.contact_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 800px;
+}
+.contact_content form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background: rgba(180, 180, 180, 0.3);
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+	border-radius: 15px;
+	width: 60%;
+	padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+	/*make the bg-color transpearent white*/
+	background: rgba(255, 255, 255, 0.3);
+	width: 95%;
+	padding: 10px;
+	/*remove border of the textarea*/
+	border-style: none;
+	border-radius: 10px;
+}
+
+textarea:hover{
+	/*less transpearent when mouse move on*/
+	background: rgba(255, 255, 255, 1);
+}
+textarea:focus{
+	/*no outline after textarea already accessed*/
+	outline: none;
+}
+
+#name, #emailAdd{
+	width: 95%;
+	padding-top: 15px;
+	border-style: none;
+	border-bottom: solid rgba(255, 255, 255, 0.3);
+	background-color: rgba(255, 255, 255, 0);
+}
+#name:hover, #emailAdd:hover{
+	/*less transpearent when mouse move on*/
+	border-bottom: solid rgba(255, 255, 255, 1);
+}
+#name:focus, #emailAdd:focus{
+	outline: none;
+}
+/*put some spaces among all of the contents*/
+.formdiv{
+	padding: 10px;
+}
+
+select{
+	background: rgba(255, 255, 255, 0.3);
+	width: 95%;
+	padding: 10px;
+	/*Remove border of the select*/
+	border-style: none;
+	/*Make 4 edges slightly round*/
+	border-radius: 10px;
+}
+select:hover{
+	/*less transpearent when mouse move on*/
+	background: rgba(255, 255, 255, 1);
+}
+select:focus{
+	/*no outline after select already accessed*/
+	outline: none;
+}
+
+button{
+	width: 95%;
+	background-color:rgba(255, 255, 255, 1);
+	padding: 10px;
+	margin-bottom: 10px;
+	color: gray;
+	border-radius: 10px;
+	border-style: none;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+button:hover{
+    font-weight: bolder;
+}
+/*remove shadow of button when click on*/
+button:active{
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0);
+}
+

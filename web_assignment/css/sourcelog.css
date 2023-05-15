@@ -1,0 +1,53 @@
+/*set h1 position, make it have some space away from nav bar and locates horizentally center*/
+
+/*set the style of caption, include color, dont style and size*/
+caption {
+        font-size: 20px;
+        font-style: italic;
+}  
+
+table{
+        border: 2px solid #FA8072;
+        width: 80%;
+        /*border should not be separated, shown as a solid line*/
+        border-collapse: collapse;
+        /*this is a way to make table stay horizentally center*/
+        margin-left: auto;
+        margin-right: auto;
+}
+/*make all of texts shown to left in every cell */
+tr{
+        text-align: left;
+}
+/*text color of table heading should be white and background color will be different from other rows*/
+th{
+        background: #FA8072;
+        color: white;
+}
+/*change the color of whole row when mouse hover over*/
+tr:hover{
+        background-color: antiquewhite;
+}
+/*the color of links will not change after visited, also change the color of links when hover over*/
+.main-content a:visited{
+        color: #FA8072;
+}
+.main-content a:hover{
+        color: brown;
+}
+th, td{
+         padding: 10px;
+         width: auto;
+}
+footer{
+        position: relative;
+        bottom: 0;
+}
+
+a:active{
+        color: #FA8072;
+}
+a{
+        color: #FA8072;
+        text-decoration: none; 
+}

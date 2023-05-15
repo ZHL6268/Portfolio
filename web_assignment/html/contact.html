@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Zhihan Li's Project</title>
+    <!--the general design/style for all pages-->
+	<link rel="stylesheet" href="../css/index.css">
+    <!--the design/style for contact page only-->
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+</head>
+<body>
+    <!--nav part that every page have the same one-->
+    <div class="nav">
+        <a href="../index.html" >Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html">Contact</a>
+        <a href="courseShare.html">courseShare</a>
+    </div> 
+     <!--the Title part show where the visiter is, which is contact me page-->
+    <div class="title">
+        <h1>Contact Me</h1>
+    </div>
+
+    <div class="night-mode-button">
+        <input type="checkbox" class="checkbox" id="night-mode">
+        <label for="night-mode" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <i class="blob"></i>
+        </label>
+    </div>
+    
+     <!--the main content of contact is a h2 and a form-->
+    <div class="contact_content">
+        <h2> Contact Form</h2>
+         <!--submit will lead to a mail to u7376268@anu.edu.au -->
+        <form  method="post" action="mailto:u7376268@anu.edu.au">
+            <div class="formdiv">
+                <label for="name">Your Name</label><br>
+                <input type="text" id="name" name="name" placeholder="Your name..."><br>
+            </div>
+            <div class="formdiv">
+                <label for="emailAdd">Your email address</label><br>
+                <input type="text" id="emailAdd" name="emailAdd" placeholder="Your email..."><br>
+            </div>
+            <div class="formdiv">
+                <label >What is your gender?</label><br>
+                <select id="gender" name="gender">
+                    <option value="Select">Select</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="NotToSay">I prefer not to say</option>
+                </select>
+            </div>
+            <div  class="formdiv">
+                <label>Please fill in your message below</label><br>
+                <textarea rows="10" cols="30" placeholder="Message/Feedback content here..."></textarea><br>
+            </div>
+            <div class="formdiv">
+                <!--submit will cause a mailSubmit()function, which is an alert -->
+                <button type="submit" value="Send it" id="submit" onclick="mailSubmit()">Submit</button>
+                <button type="reset" value="Clear" id="reset">Clear</button>	
+            </div>
+        </form> 
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
